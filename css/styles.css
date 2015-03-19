@@ -4,6 +4,7 @@
 body{
 	background-color: #DADAD9;
 
+
 }
 
 h1{
@@ -13,6 +14,12 @@ h1{
 
 p{
 	margin:0px;
+}
+
+iframe{
+	margin: 0px;
+	padding:0px;
+	border: none;
 }
 
 /************ CLASS STYLE *************/
@@ -36,6 +43,7 @@ p{
 #header{
 	background-color: #E9487F;
 	height:200px;
+	text-align: center;
 }
 
 #torso{
@@ -48,14 +56,14 @@ p{
 #torsoLeft{
 	background-color: #BECF00;
 	height:150px;
-	width:200px;
+	width:130px;
 	float:left;
 }
 
 #torsoMiddle{
 	background-color: #6CB42C;
-	height:150px;
-	width:430px;
+	height:auto;
+	width:800px;
 	margin-left:10px;
 	float:left;
 }
@@ -72,3 +80,63 @@ p{
 	background-color:#EA5A0B;
 	height: 30px;
 }
+
+#logo{
+	margin:0 auto;
+}
+
+/*//// NAVIGATION BAR ////*/
+
+#navbar {
+	margin: 0;
+	padding: 0;
+	height: 1em; 
+	position:relative;
+}
+
+#navbar li {
+	list-style: none;
+	 }
+
+#navbar li a {
+	display: block;
+	padding: 3px 8px;
+	background-color: #5e8ce9;
+	color: #fff;
+	text-decoration: none; 
+}
+
+#navbar li a:hover{
+	background-color:green;
+}
+
+#navbar li ul {
+	display: none; 
+	width: 10em; /* Width to help Opera out */
+	background-color: #69f;
+	margin:0 0 0 30px;
+}
+
+
+#navbar li:hover ul, #navbar li.hover ul {
+	display: block;
+	position: absolute;
+	margin: 0 0 0 100px;
+	padding: 0;
+	float:left; 
+	top:0px;
+	background-color: #8db3ff;
+}
+
+#navbar li:hover li, #navbar li.hover li {
+	float: none; 
+}
+
+#navbar li:hover li a, #navbar li.hover li a {
+	background-color: #69f;
+	border-bottom: 1px solid #fff;
+	color: #000; 
+}
+
+#navbar li li a:hover {
+	background-color: #8db3ff; }

@@ -18,44 +18,57 @@
 <body>
 
 
-<div id="pageHolder">
-	<p>pageHolder</p>
-	<div id="header">
-		header
-	</div><!-- CLOSE header -->
-
-	<div id="torso">
-		<p>torso</p>
-		<div id="torsoLeft">
-			<ul>
-			  <li>List Item 1</li>
-			  <li>List Item 2</li>
-			  <li>List Item 3</li>
-			</ul>
-		</div>
-
-		<div id="torsoMiddle">
-			<h1 class="specialHeading">This is a Heading</h1>
-			<p>This is a paragraph <b>This is bold</b></p>
-		</div>
-
-		<div id="torsoRight">
+		<div id="pageHolder">
+			<p>pageHolder</p>
 			
-		</div>
-		
+			<div id="header">
+				
+				<img id="logo" src="images/logo_300x200.png" alt="cloud logo" height="200" width="300">
 
-	</div><!-- CLOSE torso -->
-
-	<div id="footer">
-		<p>footer</p>
-	</div><!-- CLOSE footer -->
-
-	
-	
+			</div><!-- CLOSE header -->
 
 
+			<div id="torso">
+				<p>torso</p>
+				<div id="torsoLeft">
 
-</div><!-- CLOSE pageHolder -->
+					<!-- NAVIGATION BAR -->
+						<ul id="navbar">
+							  <li><a href="page_01.html" target="homeFrame">List Item 1</a>
+							  		<!--submenu 1-->
+							  		<ul>
+							  			<li><a href="#">option 1</a></li>
+							  			<li><a href="#">option 2</a></li>
+							  		</ul>
+
+							  </li>
+
+							  <li><a href="page_02.html" target="homeFrame">List Item 2</a></li>
+							  <li><a href="#">List Item 3</a></li>
+							</ul>
+
+						<!-- END NAVIGATION BAR -->
+
+				</div>
+
+				<div id="torsoMiddle">
+					
+
+					<iframe name="homeFrame" src="page_01.html" width="100%" height="300"></iframe>
+				</div>
+
+				
+				
+
+			</div><!-- CLOSE torso -->
+
+			<div id="footer">
+
+				
+			</div><!-- CLOSE footer -->
+
+
+		</div><!-- CLOSE pageHolder -->
 
 </body>
 
